@@ -10,7 +10,10 @@ const Forms = (props) => {
     })
 
     const handleChange = e => {
-        
+        setInput(e.value.target)
+    }
+    const handleSubmit = e => {
+        e.preventDefault()
     }
     return (
         <div>
